@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+  }
+  .banner-container{
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+   
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .brand{
+    color: #E6533C;
+    font-size: 2.25rem;
+    font-weight: 900;
+  }
+  .list-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 39px;
+    height: 45px;
+  }
+  .list-items li{
+    margin-right: 45px;
+    font-size: 1.125rem;
+  }
+  span{
+    background: #E6533C;
+    padding: 8px 20px;
+    border-radius: 46px;
+  }
+  .hamburger{
+    display: none;
+  }
+  .banner{
+    display: flex;
+    gap: 150px;
+  }
+  /* .banner-content{
+    width: 50%;
+  } */
+  .banner-title{
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin-bottom: 28px;
+  }
+  .banner-description{
+    font-size: 1.125rem;
+    opacity: 0.5;
+    margin-bottom: 28px;
+  }
+  .btn-primary{
+    background-color: #E6533C;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 36px;
+    color: white;
+    margin-top: 20px;
+    font-size: 1.125rem;
+  }
+  .btn-secondary{
+    padding: 15px 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 36px;
+    background: none;
+    color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 1.125rem;
+  }
+
+  .change-your-habit{
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+  }
+  .title{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+  }
+  .description, .card-description{
+    font-size: 0.9rem;
+    opacity: 0.5;
+  }
+  .cards{
+    display: flex;
+    gap: 40px;
+    margin-top: 54px;
+  }
+  .cards img{
+    border-radius: 50%;
+  }
+  .card-name{
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width: 576px) {
+    .cards{
+      flex-direction: column;
+    }
+    .list-items{
+      display: none;
+    }
+    .hamburger{
+      display: inline;
+    }
+    
+    .banner{
+      flex-direction: column;
+      text-align: left;
+      gap: 48px;
+    }
+    .banner-content{
+      width: 100%;
+    }
+    .banner-title{
+      font-size: 2.25rem;
+    }
+    .btn{
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 0;
+    }
+  }
