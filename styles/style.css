@@ -57,11 +57,13 @@
   }
   .banner{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 150px;
   }
-  /* .banner-content{
+  .banner-content{
     width: 50%;
-  } */
+  }
   .banner-title{
     font-size: 4.5rem;
     font-weight: 900;
@@ -71,6 +73,9 @@
     font-size: 1.125rem;
     opacity: 0.5;
     margin-bottom: 28px;
+  }
+  .banner-image img{
+    width: 100%;
   }
   .btn-primary{
     background-color: #E6533C;
