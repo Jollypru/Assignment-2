@@ -126,8 +126,24 @@
     margin-top: 30px;
     margin-bottom: 10px;
   }
+
+  .running-activity{
+    max-width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 150px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    margin: 100px auto;
+    padding: 30px;
+  }
+  .running-image img{
+    width: 100%;
+    border-radius: 18px;
+  }
   @media screen and (max-width: 576px) {
-    .cards{
+    .cards, .running-activity{
       flex-direction: column;
     }
     .list-items{
@@ -148,9 +164,18 @@
     .banner-title{
       font-size: 2.25rem;
     }
+    .title{
+      font-size: 2rem;
+    }
     .btn{
       display: flex;
       flex-direction: row;
       margin-bottom: 0;
+    }
+    .running-activity{
+      gap: 30px;
+    }
+    .info button{
+      width: 100%;
     }
   }
